@@ -1,0 +1,13 @@
+object Solution {
+    def main(args: Array[String]) {
+
+val mealc: Double=scala.io.StdIn.readDouble()
+val tipp: Int=scala.io.StdIn.readInt()
+val taxp: Int=scala.io.StdIn.readInt()
+            
+val totalc: Double=((mealc+(tipp*mealc/100).toDouble+(taxp*mealc/100).toDouble)-0.5)
+val totc=math.ceil(totalc).toInt    
+
+println(s"The total meal cost is ${totc} dollars.")
+    }
+}
